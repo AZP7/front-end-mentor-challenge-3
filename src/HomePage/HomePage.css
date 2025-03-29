@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+
+.Home_Page{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: url('../assests/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.space_intro, .explore{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.space_intro{
+    flex-direction: column;
+    color: #fff;
+    padding: 30px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.space_intro h1,
+.space_intro h3,
+.space_intro p {
+    margin-left: 40px;
+}
+
+.explore{
+    justify-content: center;
+}
+
+.space_intro h3{
+    font-family: "Barlow Condensed";
+    font-weight: 400;
+    color: rgba(208, 214, 249, 1);
+    font-size: 28px;
+}
+
+.space_intro h1{
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 144px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+}
+
+.space_intro p {
+    font-family: Barlow;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(208, 214, 249, 1);
+}
+
+.btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.explore_btn{
+    width: 60%;
+    height: 60%;
+    font-size:32px;
+    border-radius: 50%;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    font-family: Bellefair;
+
+}
+
+.btn_container.hovered{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}

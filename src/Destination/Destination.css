@@ -1,0 +1,103 @@
+.destination{
+    background-image: url('../assests/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.container_{
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+}
+.container_ .destination_contex{
+    width: 1200px;
+    height: 80%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.planet_destination{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left:50px ;
+}
+.planet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.planet img{
+    width: 400px;
+}
+.nav{
+    width: 300px;
+}
+.nav ul{
+    display: flex;  
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav ul li{
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.activePlanet{
+    border-bottom: 2px solid #fff;
+}
+.distance_time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.distance_time div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.distance_time div span:first-child{
+    font-size: 14px;
+    font-family: "Barlow Condensed";
+    margin-bottom: 20px;
+}
+.distance_time div span:last-child{
+    font-size: 28px;
+    font-family: Bellefair;
+}
+.aboutplanet{
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.planetName{
+    font-family: Bellefair;
+    font-size: 96px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* .planetName, .aboutplanet {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;    
+}

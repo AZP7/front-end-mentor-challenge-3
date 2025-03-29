@@ -1,0 +1,109 @@
+.Technology{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../assests/technology/background-technology-desktop.jpg');
+    display: grid   ;
+    grid-template-columns: repeat(2, 1fr);
+}
+.technology_content pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+    margin: 0;
+    line-height: 1.6;
+    color: #D0D6F9;
+    font-size: 16px;
+}
+.technology_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+    color:#fff;
+    padding-left: 100px;
+}
+.technology_info h3{
+    font-family:"Barlow Condensed";
+    letter-spacing: 4px;   
+    font-size :28px;
+    font-weight: 400;
+}
+.technology_info h3  span{
+    opacity :0.5;
+    font-weight:bold;
+}
+.technology_details{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+}
+.technology_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width:80px;
+    height:100%;
+    margin-right: 30px;
+}
+.technology_buttons span{
+    font-family: Bellefair;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #e4e4e4;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 16px 0;
+}
+
+.technology_buttons span:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.technology_content h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Bellefair;
+    font-size: 56px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+}
+.technology_content h2{
+    font-family: Bellefair;
+    font-size: 32px;
+    color: grey;
+    font-weight: 400;
+}
+.technology_content pre{
+    font-family: Barlow;
+    font-size: 18px;
+    color: rgba(208, 214, 249, 1);
+    line-height: 180%;
+}
+.technology_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.technology_photo img{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    transform: translateY(30px);
+}
+.activeShip{
+    background-color: #fff;
+    color: #000000 !important;
+    border-color: #fff;
+}
