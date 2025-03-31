@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #333;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Add any global styles or CSS variables here */
+:root {
+  /* Your color palette */
+  --primary-color: #fff;
+  --secondary-color: rgba(255, 255, 255, 0.1);
+  --text-color: #fff;
+  
+  /* Font sizes */
+  --nav-font-size: 16px;
+  --heading-font-size: 24px;
+}
+.navbar {
+  color: var(--text-color);
+  font-size: var(--nav-font-size);
+}

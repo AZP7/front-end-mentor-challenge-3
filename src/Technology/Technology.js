@@ -6,6 +6,8 @@ import spaceCapsulePotrait from '../assests/technology/image-space-capsule-portr
 import spaceCapsuleLandscape from '../assests/technology/image-space-capsule-landscape.jpg';
 import spacePortPotrait from '../assests/technology/image-spaceport-portrait.jpg';
 import spacePortLandscape from '../assests/technology/image-spaceport-landscape.jpg';
+import useResponsiveMobile from '../hooks/useResponsiveMobile'
+
 
 const spaceShip = [
   {

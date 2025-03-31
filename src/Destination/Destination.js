@@ -3,6 +3,7 @@ import './Destination.css'
 import europa from '../assests/destination/image-europa.png'
 import mars from '../assests/destination/image-mars.png'
 import moon from '../assests/destination/image-moon.png'
+import useResponsiveMobile from '../hooks/useResponsiveMobile'
 import titan from '../assests/destination/image-titan.png'
 
 export default function Destination() {

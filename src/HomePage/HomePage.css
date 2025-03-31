@@ -45,13 +45,11 @@
     font-family: "Barlow Condensed";
     font-weight: 400;
     color: rgba(208, 214, 249, 1);
-    font-size: 28px;
 }
 
 .space_intro h1{
     font-family: Bellefair;
     font-weight: 400;
-    font-size: 144px;
     margin-top: 28px;
     margin-bottom: 28px;
 
@@ -60,7 +58,6 @@
 .space_intro p {
     font-family: Barlow;
     font-weight: 400;
-    font-size: 18px;
     color: rgba(208, 214, 249, 1);
 }
 
@@ -89,4 +86,47 @@
 .btn_container.hovered{
     background-color: rgba(255, 255, 255, 0.1);
 
+}
+@media (max-width: 1000px) {
+    .Home_Page{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
+        padding-right: 0px;
+        overflow: visible;
+    }   
+    .space_intro , .explore{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .space_intro{
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .explore{
+        padding-top: 20px;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 550px) {
+    .space_intro h3{
+        font-size: 16px;
+    }
+    .space_intro h1{
+        font-size: 80px;
+    }
+    .space_intro p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .explore .explore_btn{
+        font-size:18px;
+    }
+    .btn_container{
+        width: 300px;
+        height: 300px;
+    }
 }

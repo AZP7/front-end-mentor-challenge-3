@@ -4,6 +4,7 @@ import ansariImage from '../assests/crew/image-anousheh-ansari.png';
 import douglasImage from '../assests/crew/image-douglas-hurley.png';
 import markImage from '../assests/crew/image-mark-shuttleworth.png';
 import victorImage from '../assests/crew/image-victor-glover.png';
+import useResponsiveMobile from '../hooks/useResponsiveMobile'
 
 
 export default function Crew() {

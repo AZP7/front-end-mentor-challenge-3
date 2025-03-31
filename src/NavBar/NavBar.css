@@ -8,11 +8,10 @@
 }
 .navbar{
     width: 100vw;
-    height: 70px;
     display: flex;
-    align-items: center;
     background-color: transparent;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 30px;
     z-index: 10;
@@ -20,13 +19,22 @@
 .logo{
     margin-top: 20px;
     margin-left: 30px;
+    cursor: pointer;
+}
+.Openmenu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.HideMenu{
+    display: none !important;
 }
 .ul{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 100%;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -40,6 +48,8 @@
     color: #fff;
 }
 .ul li a {
+    padding-top : 30px;
+    padding-bottom: 30px;
     text-decoration: none;
     color: #fff;
     height: 100%;
@@ -59,4 +69,60 @@
 
 .activePage a {
     border-bottom: none !important;
+}
+.responsive_nav{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    right: 0;
+    display: flex;    
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+    backdrop-filter: blur(30px);
+}
+.responsive_nav img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    transform: translateX(190px);
+}
+.responsive_nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.responsive_nav ul li{
+    font-size: 16px;
+    letter-spacing: 2px;
+    height: 100%;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    width: 100%;
+
+}
+.responsive_nav.display{
+    transform: translateX(0);
+}
+.responsive_nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    width: 100%;
+
+}
+.activeBar{
+    border-right: 1px solid #fff;
 }
