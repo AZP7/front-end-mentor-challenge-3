@@ -20,8 +20,8 @@
 .crew_info{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-evenly;/*vertical*/
+    align-items: flex-start;/*horizonal*/
     position: relative;
 }
 .crew_info h3{
@@ -111,6 +111,16 @@
     background: linear-gradient(to top, rgba(11, 13, 23, 1) 0%, rgba(11, 13, 23, 0) 100%);
     pointer-events: none;
 }
+.mobileParagraph{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Barlow;
+    font-size: 15px;
+    color: rgba(208, 214, 249, 1);
+    line-height: 180%;
+    text-align: center;
+
+}
 .active {
     background-color: #fff !important;
 }
@@ -120,4 +130,52 @@
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+@media (max-width: 490px){
+    .crew_{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    }
+    .crew_{
+        width: 100vw;
+    }
+    .crew_info .text{
+        transform: translateY(-50px);
+    }
+    .crew_info h3{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .navBtn{
+        left: 50%;
+        transform: translateX(-25%);
+    }
+    .text h2{
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .crew_image{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 400px){
+    .crew_info .text{
+        transform: translateY(0px);
+    }
+    .crew_image{
+        width: 300px;
+        height: 300px;
+    }
+    .text{
+        margin-bottom:30px;
+    }
 }

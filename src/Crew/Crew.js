@@ -8,6 +8,9 @@ import useResponsiveMobile from '../hooks/useResponsiveMobile'
 
 
 export default function Crew() {
+
+  const IsMobile = useResponsiveMobile(); 
+    
   const CrewData = [
     {Name : "DOUGLAS HURLEY",
     image : douglasImage,
@@ -64,7 +67,12 @@ first self-funded woman to fly to the ISS, and the first Iranian in space.`,
                 <div className="text">
                     <h2 className={fade ? 'fadeIn' : null}>{CrewData[crew].title}</h2>
                     <h1 className={fade ? 'fadeIn' : null}>{CrewData[crew].Name}</h1>
-                    <pre className={fade ? 'fadeIn' : null}>{CrewData[crew].bio}</pre>
+                    {
+                        IsMobile ? 
+                        <p className={`mobileParagraph ${fade ? 'fadeIn' : null}`}>{CrewData[crew].bio}</p> :
+                        
+                        <pre className={fade ? 'fadeIn' : null}>{CrewData[crew].bio}</pre>
+                    }
                 </div>
 
                 <div className="navBtn">

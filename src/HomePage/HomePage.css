@@ -35,6 +35,7 @@
 .space_intro h3,
 .space_intro p {
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 .explore{
@@ -45,12 +46,14 @@
     font-family: "Barlow Condensed";
     font-weight: 400;
     color: rgba(208, 214, 249, 1);
+    font-size: 28px;
 }
 
 .space_intro h1{
     font-family: Bellefair;
-    font-weight: 400;
+    font-weight: 400;   
     margin-top: 28px;
+    font-size: 144px;
     margin-bottom: 28px;
 
 }
@@ -59,6 +62,7 @@
     font-family: Barlow;
     font-weight: 400;
     color: rgba(208, 214, 249, 1);
+    font-size: 18px;
 }
 
 .btn_container{

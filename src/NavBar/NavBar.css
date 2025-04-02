@@ -126,3 +126,9 @@
 .activeBar{
     border-right: 1px solid #fff;
 }
+@media (max-width: 400px) {
+    .responsive_nav img{
+        transform: translateX(150px);
+
+    }
+}

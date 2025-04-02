@@ -9,7 +9,7 @@ import spacePortLandscape from '../assests/technology/image-spaceport-landscape.
 import useResponsiveMobile from '../hooks/useResponsiveMobile'
 
 
-const spaceShip = [
+const spaceShip = [  
   {
    Name : 'LAUNCH VEHICLE',
    Image : [launchVehiclePotrait,launchVehicleLandscape],
@@ -44,6 +44,8 @@ const spaceShip = [
 
 export default function Technology() {
 
+  const IsMobile = useResponsiveMobile();
+
   const [changeShip, setChangeShip] = useState(1);
   const [fade, setFade] = useState(false);
 
@@ -58,28 +60,43 @@ export default function Technology() {
 
         <div className="technology_info">
 
-          <h3><span>03 </span>SPACE LAUNCH 101</h3>
+          {
+            IsMobile ? null:
+            <h3><span>03 </span>SPACE LAUNCH 101</h3>
+          }
 
           <div className="technology_details">
+
 
               <div className="technology_buttons">
                   <span onClick={() => handleSpaceShipPage(1)} className = {changeShip === 1 ? 'activeShip' : null}>1</span>
                   <span onClick={() => handleSpaceShipPage(2)} className = {changeShip === 2 ? 'activeShip' : null}>2</span>
                   <span onClick={() => handleSpaceShipPage(3)} className = {changeShip === 3 ? 'activeShip' : null}>3</span>
-                </div>
-                
-                <div className="technology_content">
+              </div>
+            
+            <div className="technology_content">
                     <h2 className = {fade? 'fadeIn' : null }>THE TERMINOLOGY…</h2>
                     <h1 className = {fade? 'fadeIn' : null }>{spaceShip[changeShip-1].Name}</h1>
+                    {
+                      IsMobile ? 
+                    <p className = {fade? 'fadeIn' : null }>{spaceShip[changeShip-1].Details}</p>
+                    :
                     <pre className = {fade? 'fadeIn' : null }>{spaceShip[changeShip-1].Details}</pre>
-                </div>
 
+                    }
+            </div>
           </div>
 
         </div>
 
         <div className="technology_photo">
-            <img src={spaceShip[changeShip-1].Image[0]} alt="launch vehicle" className = {fade? 'fadeIn' : null } />
+          {
+            IsMobile ? 
+            <h3><span>03 </span>SPACE LAUNCH 101</h3>:
+            null
+          }
+
+          <img src={spaceShip[changeShip-1].Image[0]} alt="launch vehicle" className = {fade? 'fadeIn' : null } />
         </div>
 
 

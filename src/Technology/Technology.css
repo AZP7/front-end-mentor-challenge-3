@@ -5,8 +5,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../assests/technology/background-technology-desktop.jpg');
-    display: grid   ;
+    display: grid ;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    " technology_info technology_photo" ;
 }
 .technology_content pre {
     font-family: inherit;
@@ -106,4 +108,108 @@
     background-color: #fff;
     color: #000000 !important;
     border-color: #fff;
+}
+
+@media (max-width:500px) {
+    .Technology{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "technology_photo"
+            "technology_info"
+        ;
+    }
+    .technology_photo{
+        grid-area: technology_photo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end !important;
+
+    }
+    .technology_photo h3{
+        color:#fff;
+        transform: translateY(-60px);
+        font-family:"Barlow Condensed";
+        letter-spacing: 4px;   
+        font-weight: 400;
+
+    }
+    .technology_photo h3 span{
+        opacity :0.5;
+        font-weight:bold;
+    }
+    .technology_photo img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+    .technology_info{
+        grid-area: technology_info;
+        padding-left: 0;
+        align-items:center;
+    }
+    .technology_details{
+        flex-direction: column;
+        justify-content: center ;
+        align-items:center;
+    }
+    .technology_buttons{
+        width: 100%;
+        flex-direction: row;
+        margin-right: 0px;
+        justify-content: center;
+        height: 100%;   
+        transform: translateY(-60px);
+
+    }
+    .technology_buttons span{
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .technology_content h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .technology_content h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .technology_content p{
+        font-family: inherit;
+        white-space: pre-wrap;
+        margin: 0;
+        line-height: 1.6;
+        color: #D0D6F9;
+        font-size: 15px;
+        text-align: center;
+    }
+
+}   
+@media(max-width:430px){
+    .technology_buttons{
+        transform: translateY(-20px);
+    }   
+    .technology_content p{
+        font-size: 12px;
+    }
+}
+@media (max-width:400px) {
+    .technology_photo h3{
+        transform: translateY(-70px);
+    }
+    .technology_photo img{
+        aspect-ratio: 6/3 ;
+        transform: translateY(-30px);
+        
+    }
+    .technology_buttons{
+        transform: translateY(-30px);
+    }
+    .technology_content p{
+        font-size: 13px;
+    }
 }
