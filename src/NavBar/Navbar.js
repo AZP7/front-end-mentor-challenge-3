@@ -5,10 +5,6 @@ import menu from '../assests/shared/icon-hamburger.svg'
 import close from '../assests/shared/icon-close.svg'
 import './NavBar.css'
 import { Route, Routes, Link, useLocation } from 'react-router-dom'
-import HomePage from '../HomePage/HomePage'
-import Destination from '../Destination/Destination'
-import Crew from '../Crew/Crew'
-import Technology from '../Technology/Technology'
 
 export default function Navbar() {
   const location = useLocation();
