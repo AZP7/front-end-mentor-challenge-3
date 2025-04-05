@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/front-end-mentor-challenge-3/static/css/main.4255029c.css",
-    "main.js": "/front-end-mentor-challenge-3/static/js/main.8a5edd05.js",
+    "main.js": "/front-end-mentor-challenge-3/static/js/main.c910d727.js",
     "static/media/image-victor-glover.png": "/front-end-mentor-challenge-3/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/front-end-mentor-challenge-3/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/front-end-mentor-challenge-3/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -25,10 +25,10 @@
     "static/media/icon-close.svg": "/front-end-mentor-challenge-3/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/front-end-mentor-challenge-3/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
     "main.4255029c.css.map": "/front-end-mentor-challenge-3/static/css/main.4255029c.css.map",
-    "main.8a5edd05.js.map": "/front-end-mentor-challenge-3/static/js/main.8a5edd05.js.map"
+    "main.c910d727.js.map": "/front-end-mentor-challenge-3/static/js/main.c910d727.js.map"
   },
   "entrypoints": [
     "static/css/main.4255029c.css",
-    "static/js/main.8a5edd05.js"
+    "static/js/main.c910d727.js"
   ]
 }
