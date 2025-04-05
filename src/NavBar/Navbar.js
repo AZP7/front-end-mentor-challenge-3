@@ -50,10 +50,10 @@ export default function Navbar() {
             />
             : 
             <ul className={isMenuOpen ? "ul" : "ul close"}>
-                <li className={ location.pathname ==='/' ? 'activePage' : ''}><Link to="/">00 HOME</Link></li>
-                <li className={ location.pathname ==='/destination' ? 'activePage' : ''}><Link to="/destination">01 DESTINATION</Link></li>
-                <li className={ location.pathname ==='/crew' ? 'activePage' : ''}><Link to="/crew">02 CREW</Link></li>
-                <li className={ location.pathname ==='/technology' ? 'activePage' : ''}><Link to="/technology">03 TECHNOLOGY</Link></li>
+                <li className={ location.pathname ==='front-end-mentor-challenge-3/' ? 'activePage' : ''}><Link to="front-end-mentor-challenge-3/">00 HOME</Link></li>
+                <li className={ location.pathname ==='front-end-mentor-challenge-3/destination' ? 'activePage' : ''}><Link to="front-end-mentor-challenge-3/destination">01 DESTINATION</Link></li>
+                <li className={ location.pathname ==='front-end-mentor-challenge-3/crew' ? 'activePage' : ''}><Link to="front-end-mentor-challenge-3/crew">02 CREW</Link></li>
+                <li className={ location.pathname ==='front-end-mentor-challenge-3/technology' ? 'activePage' : ''}><Link to="front-end-mentor-challenge-3/technology">03 TECHNOLOGY</Link></li>
             </ul>
           }
           <div className={`responsive_nav ${isMenuOpen ? 'display' : ''}`}>
@@ -72,10 +72,10 @@ export default function Navbar() {
         </nav>
 
         <Routes>
-            <Route path='/' element={<HomePage/>} />
-            <Route path='/destination' element={<Destination/>} />
-            <Route path='/crew' element={<Crew/>} />
-            <Route path='/technology' element={<Technology/>} />
+            <Route path='front-end-mentor-challenge-3/' element={<HomePage/>} />
+            <Route path='front-end-mentor-challenge-3/destination' element={<Destination/>} />
+            <Route path='front-end-mentor-challenge-3/crew' element={<Crew/>} />
+            <Route path='front-end-mentor-challenge-3/technology' element={<Technology/>} />
         </Routes>
     </>
   )
