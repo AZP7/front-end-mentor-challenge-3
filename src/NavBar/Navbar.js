@@ -39,7 +39,7 @@ export default function Navbar() {
   },[])
   
   return (
-    <>
+    
         <nav className="navbar" >
           <img src={logo} alt="logo" className="logo" onClick={HandleExplore} />
 
@@ -71,12 +71,6 @@ export default function Navbar() {
             
         </nav>
 
-        <Routes>
-            <Route path='/' element={<HomePage/>} />
-            <Route path='/destination' element={<Destination/>} />
-            <Route path='/crew' element={<Crew/>} />
-            <Route path='/technology' element={<Technology/>} />
-        </Routes>
-    </>
+
   )
 }
