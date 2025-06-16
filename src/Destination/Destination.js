@@ -1,9 +1,11 @@
-import React , {useState} from 'react'
+import React , {useState,useEffect} from 'react'
 import './Destination.css'
 import europa from '../assests/destination/image-europa.png'
 import mars from '../assests/destination/image-mars.png'
 import moon from '../assests/destination/image-moon.png'
 import titan from '../assests/destination/image-titan.png'
+import MobileImage from '../assests/destination/background-destination-mobile.jpg'
+import DesktopImage from '../assests/destination/background-destination-desktop.jpg'
 
 export default function Destination() {
 
@@ -21,58 +23,67 @@ export default function Destination() {
     setFade(true);
     setTimeout(() => setFade(false), 600);
   }
+      const [isMobile, setIsMobile] = useState(false);
+      const HandleResize = ()=>{
+      setIsMobile(window.innerWidth < 550);
+    }
+      useEffect(()=>{
+      HandleResize();
+      window.addEventListener('resize', HandleResize);
+      return ()=>{
+        window.removeEventListener('resize', HandleResize);
+      }
+    },[])
+  
   
   return (
-    <div className="destination" >
+    <section className="Destination_page d-flex flex-column flex-lg-row container-fluid p-0" 
+            style={{backgroundImage: `url(${isMobile ? MobileImage : DesktopImage})`}}>
 
-        <div className="container_" >
-              
-              <div className="destination_contex"
-                  style= {{color:"#fff"}}
-              >
-                    <div className="planet">
-                        <h2><span>01 </span>PICK YOUR DESTINATION</h2>
-                        <img src={planet[activePlanet -1 ]} alt="destination planet" className ={` ${fade ? 'fade-in' : ''}`}  />
+                    <div className="planet_ d-flex flex-column w-100 justify-content-center  align-items-center ">
+                        <h2 className='text-center opacity-75 fs-1 text-light mb-5 text-md-'><span className='opacity-50 me-4'>01 </span>PICK YOUR DESTINATION</h2>
+
+                        <img src={planet[activePlanet -1 ]} alt="destination planet" className ={`mb-4 ${fade ? 'fade-in' : ''}`} draggable="false" />
                     </div>
 
-                    <div className="planet_destination"
+                    <div className="destination_ d-flex flex-column align-items-center justify-content-center align-items-lg-start"
                       style= {{color:"#fff",
                               display:"flex",
 
                       }}
                     >
                       
-                        <nav className="nav">
-                           <ul>
+                        <nav className="nav_ w-100 d-flex justify-content-center justify-content-lg-start align-items-center ps-0">
+                           <ul className='d-flex  w-75 align-items-center justify-content-evenly justify-content-lg-between mb-4 ps-0'>
                               <li 
                               onClick={()=> handlePlanet(1)}
-                              className={activePlanet === 1 ? "activePlanet" : null}
+                              className={`pb-3 ${activePlanet === 1 ? "activePlanet" : null}`}
                               >
                                 MOON
                               </li>
 
                               <li
                               onClick={()=> handlePlanet(2)}
-                              className={activePlanet === 2 ? "activePlanet" : null}>
+                              className={`pb-3 ${activePlanet === 2 ? "activePlanet" : null}`}>
                                 MARS
                               </li>
 
                               <li
                               onClick={()=> handlePlanet(3)}
-                              className={activePlanet === 3 ? "activePlanet" : null}>
+                              className={`pb-3 ${activePlanet === 3 ? "activePlanet" : null}`}>
                                EUROPA
                               </li>
 
                               <li
                               onClick={()=> handlePlanet(4)}
-                              className={activePlanet === 4 ? "activePlanet" : null}>
+                              className={`pb-3 ${activePlanet === 4 ? "activePlanet" : null}`}>
                                 TITAN
                               </li>
 
                            </ul>
                         </nav>
 
-                        <h1 className={`planetName ${fade ? 'fade-in' : ''}`}>{planetName[activePlanet -1 ]}</h1>
+                        <h1 className={`planetName_ mb-4 ${fade ? 'fade-in' : ''}`}>{planetName[activePlanet -1 ]}</h1>
 
                         {activePlanet === 1 ? <p className ={`aboutplanet ${fade ? 'fade-in' : ''}`}>
                           See our planet as you’ve never seen it before.  A perfect <br/>
@@ -102,14 +113,15 @@ export default function Destination() {
                       views of the Rings of Saturn.
                     </p> : null}
                         
-                        <div className ={`distance_time ${fade ? 'fade-in' : ''}`}>
-                              <div className="distance">
-                                  <span>AVG. DISTNACE</span>
+                        <div className ={`distance_time_ d-flex w-100  ${fade ? 'fade-in' : ''}`}>
+                              <div className="distance_ d-flex flex-column align-items-center justify-content-center
+                                w-50">
+                                  <span className='mb-3'>AVG. DISTNACE</span>
                                   <span>{planetDistance[activePlanet - 1]}</span>
                               </div>
 
-                              <div className="time">
-                                  <span>EST. TRAVEL TIME</span>
+                              <div className="time_ d-flex flex-column  align-items-center justify-content-center w-50">
+                                  <span className='mb-3'>EST. TRAVEL TIME</span>
                                   <span>{planetTravelTime[activePlanet - 1]}</span>
                               </div>
 
@@ -117,10 +129,6 @@ export default function Destination() {
 
                     </div>
 
-
-              </div>
-        </div>
-      
-    </div>
+    </section>
   )
 }

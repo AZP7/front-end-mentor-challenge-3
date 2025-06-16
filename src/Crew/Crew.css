@@ -1,37 +1,76 @@
-.crew_page{
-    width: 100vw;
-    height: 100vh;
+.crew_page_{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../assests/crew/background-crew-desktop.jpg');
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+@media(max-width:430px){
+    .crew_info_{
+        height: 60vh !important;
+    }
+}
+@media (min-width: 768px) {
+    .crew_info_{
+        height: 65vh !important;
+    }
+    .crew_info_ > h3{
+        transform: translateX(-25%);
+        font-size: 1.1rem !important;
+    }
+    .crew_info_ .text >pre{
+        text-align: center;
+    }
+    .crew_image {
+        width: 50%;
+        max-height:100%;
+    }
+
+}
+/* Desktop version */
+@media (min-width: 992px) {
+    .crew_info_, .crew_photo_{
+        height: 100vh !important;
+    }
+    .crew_info_ > h3{
+        transform: translateX(0);
+        font-size: 1.5rem !important;
+    }
+    .crew_info_ .text{
+        padding-left: 13%;
+        margin-top: 25%;
+    }
+    .text h2, .text h1 , .text pre{
+        text-align: left !important;
+    }   
+    .text pre{
+        width: 85%;
+        white-space: pre-wrap;
+        word-wrap: break-word;   
+     }
+     .crew_image{
+        width: 65%;
+     }
+}
+@media (min-width: 1400px) {
+    .crew_image{
+        width: 49%;
+    }
+}
+.crew_info_{
+    height: 50vh;
+}
+.crew_photo_{
+    height: 60vh;
 }
 
-.crew_{
-    width: 80%;
-    height: 90%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.crew_info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;/*vertical*/
-    align-items: flex-start;/*horizonal*/
-    position: relative;
-}
-.crew_info h3{
+.crew_info_ h3{
     font-family: "Barlow Condensed";
-    font-size: 28px;
+    font-size: 1.3rem;
     color: #fff;
     font-weight: 400;
     letter-spacing: 4px;
 }
-.crew_info h3 span{
+.crew_info_ h3 span{
     opacity: 0.5;
     font-weight: bold;
     letter-spacing: 4px;
@@ -59,25 +98,19 @@
      opacity: 0.5;
 }
 .crew_image{
-    width: 500px;
-    height: 500px;
     object-fit: contain;
 }
 .navBtn{
     width: 60%;
-    height: 40px;
     background-color: #fff;
-    position: absolute;
-    bottom: 30px;
-    left: 0;
 }
-.navBtn span{
+.navBtn li{
     width: 80px;
     height: 80px;
     background-color: #333;
     border-radius: 50%;
 }
-.navBtn span {
+.navBtn li {
     width: 15px;
     height: 15px;
     display: inline-block;
@@ -85,23 +118,10 @@
     border-radius: 50%;
     cursor: pointer;
 }
-.navBtn {
-    width: 60%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: transparent;
-    transform: translateY(30px);
-}
-.crew_photo{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 30px;
+.crew_photo_{
     position: relative;
 }
-.crew_photo::after {
+.crew_image ::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -131,51 +151,14 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@media (max-width: 490px){
-    .crew_{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+@media (min-width: 768px) {
+    .crew_info_{
+        position: relative;
+        padding-bottom: 5%;
     }
-    .crew_{
-        width: 100vw;
-    }
-    .crew_info .text{
-        transform: translateY(-50px);
-    }
-    .crew_info h3{
-        font-size: 16px;
-        width: 100%;
-        text-align: center;
-    }
-    .navBtn{
-        left: 50%;
-        transform: translateX(-25%);
-    }
-    .text h2{
-        font-size: 18px;
-        width: 100%;
-        text-align: center;
-    }
-    .text h1{
-        font-size: 24px;
-        width: 100%;
-        text-align: center;
-
-    }
-    .crew_image{
-        width: 400px;
-        height: 400px;
-    }
-}
-@media (max-width: 400px){
-    .crew_info .text{
-        transform: translateY(0px);
-    }
-    .crew_image{
-        width: 300px;
-        height: 300px;
-    }
-    .text{
-        margin-bottom:30px;
+    .crew_info_>h3{
+        position: absolute;
+        left: 10%;
+        top: 18%;
     }
 }
