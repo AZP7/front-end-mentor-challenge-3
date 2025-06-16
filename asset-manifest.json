@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/front-end-mentor-challenge-3/static/css/main.4255029c.css",
-    "main.js": "/front-end-mentor-challenge-3/static/js/main.c910d727.js",
+    "main.css": "/front-end-mentor-challenge-3/static/css/main.bd9b3099.css",
+    "main.js": "/front-end-mentor-challenge-3/static/js/main.0d527103.js",
     "static/media/image-victor-glover.png": "/front-end-mentor-challenge-3/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/front-end-mentor-challenge-3/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/front-end-mentor-challenge-3/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -10,6 +10,7 @@
     "static/media/image-moon.png": "/front-end-mentor-challenge-3/static/media/image-moon.d287d07182de3015952f.png",
     "static/media/background-destination-desktop.jpg": "/front-end-mentor-challenge-3/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
     "static/media/image-europa.png": "/front-end-mentor-challenge-3/static/media/image-europa.3e95f7d0a16fe2ebf4c6.png",
+    "static/media/background-home-tablet.jpg": "/front-end-mentor-challenge-3/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
     "static/media/image-mars.png": "/front-end-mentor-challenge-3/static/media/image-mars.1b224c8663251270d79f.png",
     "static/media/image-spaceport-portrait.jpg": "/front-end-mentor-challenge-3/static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
     "static/media/image-spaceport-landscape.jpg": "/front-end-mentor-challenge-3/static/media/image-spaceport-landscape.0f3ca5c05a3e87191ea7.jpg",
@@ -19,16 +20,18 @@
     "static/media/image-space-capsule-portrait.jpg": "/front-end-mentor-challenge-3/static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg",
     "static/media/image-space-capsule-landscape.jpg": "/front-end-mentor-challenge-3/static/media/image-space-capsule-landscape.d672da81d5ff3ada7301.jpg",
     "static/media/image-launch-vehicle-portrait.jpg": "/front-end-mentor-challenge-3/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
+    "static/media/background-home-mobile.jpg": "/front-end-mentor-challenge-3/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
     "static/media/image-launch-vehicle-landscape.jpg": "/front-end-mentor-challenge-3/static/media/image-launch-vehicle-landscape.4281a59ff7186488fe6a.jpg",
+    "static/media/background-destination-mobile.jpg": "/front-end-mentor-challenge-3/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/front-end-mentor-challenge-3/index.html",
     "static/media/logo.svg": "/front-end-mentor-challenge-3/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/front-end-mentor-challenge-3/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/front-end-mentor-challenge-3/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.4255029c.css.map": "/front-end-mentor-challenge-3/static/css/main.4255029c.css.map",
-    "main.c910d727.js.map": "/front-end-mentor-challenge-3/static/js/main.c910d727.js.map"
+    "main.bd9b3099.css.map": "/front-end-mentor-challenge-3/static/css/main.bd9b3099.css.map",
+    "main.0d527103.js.map": "/front-end-mentor-challenge-3/static/js/main.0d527103.js.map"
   },
   "entrypoints": [
-    "static/css/main.4255029c.css",
-    "static/js/main.c910d727.js"
+    "static/css/main.bd9b3099.css",
+    "static/js/main.0d527103.js"
   ]
 }
